@@ -1,40 +1,45 @@
 import java.util.Scanner;
 
-import static questions.introductionToJava.Q01.introductionToJavaQ1.introductionToJava01;
+import static menus.MainMenu.mainMenu;
+import static questions.introductionToJava.Q01.IntroductionToJavaQ1.introductionToJava01;
+import static menus.IntroductionToJavaMenu.introductionToJavaMenu;
 
 public class App {
     public static void main(String[] args) {
-        int opcao;
+        int listChoose, questionChoose;
         Scanner input = new Scanner(System.in);
+
         do{
             cleanScreen();
             mainMenu();
-            opcao = Integer.parseInt(input.nextLine());
+            listChoose = Integer.parseInt(input.nextLine());
             cleanScreen();
-            switch (opcao){
-                case 1 -> introductionToJava01();
+
+            switch (listChoose){
+                case 1 -> {
+                    cleanScreen();
+                    introductionToJavaMenu();
+                    questionChoose= Integer.parseInt(input.nextLine());
+                    cleanScreen();
+
+                    switch (questionChoose) {
+                        case 1 -> introductionToJava01();
+                        case 0 ->{}
+                        default-> System.out.println("Opção inválida!*");
+                    }
+                }
+
                 case 2 -> System.out.println();
+
                 case 8 -> System.out.println("Saindo...");
-                default -> System.out.println("Opção invalida!*");
+                
+                default -> System.out.println("Opção inválida!*");
             }
-        }while (opcao != 8 );
+        }while (listChoose != 8 );
         input.close();
     }
 
-    private static void mainMenu(){
-        System.out.println("|====================\tSUMÁRIO\t=====================|");
-        System.out.println("| 01 - Introdução ao Java                            |");
-        System.out.println("| 02 - Criação de classes                            |");
-        System.out.println("| 03 - Arrays e ArraysLists                          |");
-        System.out.println("| 04 - Reúso de classes                              |");
-        System.out.println("| 05 - Abstratas, polimorfismo e interfaces          |");
-        System.out.println("| 06 - Coleções genéricas                            |");
-        System.out.println("| 07 - Exceções                                      |");
-        System.out.println("| 08 - Sair                                          |");
-        System.out.println("|====================================================|");
-    }
-
-    public static void cleanScreen(){
+    private static void cleanScreen(){
         try {
             if (System.getProperty("os.name").contains("Windows")) {
                 new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
