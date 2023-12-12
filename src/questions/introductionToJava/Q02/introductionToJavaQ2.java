@@ -18,7 +18,7 @@ public class IntroductionToJavaQ2 {
         } catch (Exception e) {
             System.out.println("Valor Invládio!*");
         } finally {
-            System.out.println("Precione enter para retornar ao menu!*");
+            System.out.println("\nPrecione enter para retornar ao menu!*");
             input.nextLine();
         }
     }

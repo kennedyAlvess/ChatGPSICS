@@ -15,7 +15,7 @@ public class IntroductionToJavaQ1 {
         } catch (Exception e) {
             System.err.println("Valor inválido!*");
         } finally {
-            System.out.println("Precione enter para retornar ao menu!*");
+            System.out.println("\nPrecione enter para retornar ao menu!*");
             input.nextLine();
         }
     }

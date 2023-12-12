@@ -2,7 +2,7 @@ package menus;
 
 public class Menus {
     public static void mainMenu(){
-        System.out.println("|====================  SUMÁRIO  =====================|");
+        System.out.println("|=====================  SUMÁRIO  =====================|");
         System.out.println("| 01 - Introdução ao Java                             |");
         System.out.println("| 02 - Criação de classes                             |");
         System.out.println("| 03 - Arrays e ArraysLists                           |");
@@ -11,7 +11,7 @@ public class Menus {
         System.out.println("| 06 - Coleções genéricas                             |");
         System.out.println("| 07 - Exceções                                       |");
         System.out.println("| 00 - Sair                                           |");
-        System.out.println("|====================================================|");
+        System.out.println("|=====================================================|");
     }
 
     public static void introductionToJavaMenu(){
