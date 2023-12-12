@@ -20,9 +20,17 @@ public class App {
 
                 case 2 -> System.out.println();
 
-                case 8 -> System.out.println("Saindo...");
+                case 3 -> System.out.println();
 
-                case 0 -> System.out.println("Saindo...");
+                case 4 -> System.out.println();
+
+                case 5 -> System.out.println();
+
+                case 6 -> System.out.println();
+
+                case 7 -> System.out.println();
+
+                case 0 -> System.out.println("Volte Sempre...");
                 
                 default -> System.out.println("Opção inválida!*");
             }
