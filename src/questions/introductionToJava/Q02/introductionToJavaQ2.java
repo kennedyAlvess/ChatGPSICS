@@ -1,5 +1,6 @@
 package questions.introductionToJava.Q02;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class IntroductionToJavaQ2 {
@@ -14,7 +15,7 @@ public class IntroductionToJavaQ2 {
                 num = Double.parseDouble(input.nextLine());
                 soma += num;
             }
-            System.out.println("A soma e média atitmética dos três números informados é:\nSOMA: " + soma + "\nMÉDIA: " + soma / 3);
+            System.out.println("A soma e média atitmética dos três números informados é:\nSOMA: " + soma + "\nMÉDIA: " + new DecimalFormat("#.00").format(soma / 3));
         } catch (Exception e) {
             System.out.println("Valor Invládio!*");
         } finally {

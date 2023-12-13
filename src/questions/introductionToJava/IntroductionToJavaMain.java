@@ -6,7 +6,8 @@ import static menus.Menus.introductionToJavaMenu;
 import static menus.Menus.cleanScreen;
 import static questions.introductionToJava.Q01.IntroductionToJavaQ1.introductionToJava01;
 import static questions.introductionToJava.Q02.IntroductionToJavaQ2.introductionToJava02;
-import static questions.introductionToJava.Q03.IntroductionToJavaQ3.introductionToJava03;
+//import static questions.introductionToJava.Q03.IntroductionToJavaQ3.introductionToJava03;
+import static questions.introductionToJava.Q04.IntroductionToJavaQ4.introductionToJava04;
 
 public class IntroductionToJavaMain {
     
@@ -21,8 +22,8 @@ public class IntroductionToJavaMain {
             switch (questionChoose){
                 case 1 -> introductionToJava01();
                 case 2 -> introductionToJava02();
-                case 3 -> introductionToJava03();
-                case 4 -> System.out.println();
+                case 3 -> {}//introductionToJava03();
+                case 4 -> introductionToJava04();
                 case 5 -> System.out.println();
                 case 6 -> System.out.println();
                 case 7 -> System.out.println();
