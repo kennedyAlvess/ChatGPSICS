@@ -12,7 +12,7 @@ public class IntroductionToJavaQ1 {
         try {
             double comprimentoDoLado = Double.parseDouble(input.nextLine());
             System.out.println("Área do quadrado é: " + Math.pow(comprimentoDoLado, 2));
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             System.err.println("Valor inválido!*");
         } finally {
             System.out.println("\nPrecione enter para retornar ao menu!*");

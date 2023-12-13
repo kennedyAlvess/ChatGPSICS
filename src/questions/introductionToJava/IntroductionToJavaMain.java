@@ -8,6 +8,7 @@ import static questions.introductionToJava.Q01.IntroductionToJavaQ1.introduction
 import static questions.introductionToJava.Q02.IntroductionToJavaQ2.introductionToJava02;
 //import static questions.introductionToJava.Q03.IntroductionToJavaQ3.introductionToJava03;
 import static questions.introductionToJava.Q04.IntroductionToJavaQ4.introductionToJava04;
+import static questions.introductionToJava.Q05.IntroductionToJavaQ5.introductionToJava05;
 
 public class IntroductionToJavaMain {
     
@@ -24,7 +25,7 @@ public class IntroductionToJavaMain {
                 case 2 -> introductionToJava02();
                 case 3 -> {}//introductionToJava03();
                 case 4 -> introductionToJava04();
-                case 5 -> System.out.println();
+                case 5 -> introductionToJava05();
                 case 6 -> System.out.println();
                 case 7 -> System.out.println();
                 case 8 -> System.out.println();

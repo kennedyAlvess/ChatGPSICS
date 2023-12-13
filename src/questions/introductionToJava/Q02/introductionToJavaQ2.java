@@ -16,7 +16,7 @@ public class IntroductionToJavaQ2 {
                 soma += num;
             }
             System.out.println("A soma e média atitmética dos três números informados é:\nSOMA: " + soma + "\nMÉDIA: " + new DecimalFormat("#.00").format(soma / 3));
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             System.out.println("Valor Invládio!*");
         } finally {
             System.out.println("\nPrecione enter para retornar ao menu!*");
