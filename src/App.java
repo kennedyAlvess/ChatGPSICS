@@ -1,49 +1,42 @@
 import java.util.Scanner;
 
-import static questions.introductionToJava.Q01.introductionToJavaQ1.introductionToJava01;
+import static menus.Menus.cleanScreen;
+import static menus.Menus.mainMenu;
+import static questions.introductionToJava.IntroductionToJavaMain.introductionToJavaMain;
 
 public class App {
     public static void main(String[] args) {
-        int opcao;
+        int listChoose;
         Scanner input = new Scanner(System.in);
+
         do{
             cleanScreen();
             mainMenu();
-            opcao = Integer.parseInt(input.nextLine());
+            listChoose = Integer.parseInt(input.nextLine());
             cleanScreen();
-            switch (opcao){
-                case 1 -> introductionToJava01();
+
+            switch (listChoose){
+                case 1 -> introductionToJavaMain();
+
                 case 2 -> System.out.println();
-                case 8 -> System.out.println("Saindo...");
-                default -> System.out.println("Opção invalida!*");
+
+                case 3 -> System.out.println();
+
+                case 4 -> System.out.println();
+
+                case 5 -> System.out.println();
+
+                case 6 -> System.out.println();
+
+                case 7 -> System.out.println();
+
+                case 0 -> System.out.println("Volte Sempre...");
+                
+                default -> System.out.println("Opção inválida!*");
             }
-        }while (opcao != 8 );
+        }while (listChoose != 0 );
         input.close();
     }
 
-    private static void mainMenu(){
-        System.out.println("|====================\tSUMÁRIO\t=====================|");
-        System.out.println("| 01 - Introdução ao Java                            |");
-        System.out.println("| 02 - Criação de classes                            |");
-        System.out.println("| 03 - Arrays e ArraysLists                          |");
-        System.out.println("| 04 - Reúso de classes                              |");
-        System.out.println("| 05 - Abstratas, polimorfismo e interfaces          |");
-        System.out.println("| 06 - Coleções genéricas                            |");
-        System.out.println("| 07 - Exceções                                      |");
-        System.out.println("| 08 - Sair                                          |");
-        System.out.println("|====================================================|");
-    }
-
-    public static void cleanScreen(){
-        try {
-            if (System.getProperty("os.name").contains("Windows")) {
-                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            } else {
-                System.out.print("\033[H\033[2J");
-                System.out.flush();
-            }
-        } catch (Exception e) {
-            System.err.println("Erro ao limpar o terminal: " + e.getMessage());
-        }
-    }
+  
 }
