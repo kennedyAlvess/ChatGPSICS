@@ -34,6 +34,7 @@ public class App {
                 
                 default -> System.out.println("Opção inválida!*");
             }
+            
         }while (listChoose != 0 );
         input.close();
     }

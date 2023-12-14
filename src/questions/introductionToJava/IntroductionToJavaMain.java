@@ -45,6 +45,7 @@ public class IntroductionToJavaMain {
                 case 22 -> System.out.println();
                 case 0 ->{}
                 default -> System.out.println("Opção inválida!*");
+                
             }
         }while (questionChoose != 0);
     }
