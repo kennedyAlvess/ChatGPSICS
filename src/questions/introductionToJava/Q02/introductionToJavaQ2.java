@@ -22,6 +22,5 @@ public class IntroductionToJavaQ2 {
             System.out.println("\nPrecione enter para retornar ao menu!*");
             input.nextLine();
         }
-        
     }
 }

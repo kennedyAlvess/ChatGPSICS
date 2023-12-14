@@ -28,6 +28,5 @@ public class IntroductionToJavaQ5 {
             System.out.println("\nPrecione enter para retornar ao menu!*");
             input.nextLine();
         }
-        
     }
 }
