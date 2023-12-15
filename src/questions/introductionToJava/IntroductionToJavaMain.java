@@ -13,6 +13,8 @@ import static questions.introductionToJava.Q06.IntroductionToJavaQ6.introduction
 import static questions.introductionToJava.Q07.IntroductionToJavaQ7.introductionToJava07;
 import static questions.introductionToJava.Q08.IntroductionToJavaQ8.introductionToJava08;
 import static questions.introductionToJava.Q09.IntroductionToJavaQ9.introductionToJava09;
+import static questions.introductionToJava.Q11.IntroductionToJavaQ11.introductionToJava11;
+import static questions.introductionToJava.Q12.IntroductionToJavaQ12.introductionToJava12;
 
 public class IntroductionToJavaMain {
     
@@ -34,9 +36,9 @@ public class IntroductionToJavaMain {
                 case 7 -> introductionToJava07();
                 case 8 -> introductionToJava08();
                 case 9 -> introductionToJava09();
-                case 10 -> System.out.println();
-                case 11 -> System.out.println();
-                case 12 -> System.out.println();
+                case 10 -> System.out.println("QUESTÃO DISSERTATIVA!*");
+                case 11 -> introductionToJava11();
+                case 12 -> introductionToJava12();
                 case 13 -> System.out.println();
                 case 14 -> System.out.println();
                 case 15 -> System.out.println();
