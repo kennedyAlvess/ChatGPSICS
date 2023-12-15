@@ -12,9 +12,9 @@ public class IntroductionToJavaQ5 {
         try {
             do {
                 numCDU = Integer.parseInt(input.nextLine());
-                if (numCDU < 100 || numCDU > 999) {
-                    System.out.println("Número inválido, informe um número com 3 dígitos!*");
-                }
+                
+                if (numCDU < 100 || numCDU > 999) System.out.println("Número inválido, informe um número com 3 dígitos!*");
+
             } while (String.valueOf(numCDU).length() != 3);
 
             centena = numCDU / 100;
