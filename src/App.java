@@ -31,8 +31,6 @@ public class App {
                 case 7 -> System.out.println();
 
                 case 0 -> System.out.println("Volte Sempre...");
-                
-                default -> System.out.println("Opção inválida!*");
             }
             
         }while (listChoose != 0 );
