@@ -17,6 +17,8 @@ import static questions.introductionToJava.Q11.IntroductionToJavaQ11.introductio
 import static questions.introductionToJava.Q12.IntroductionToJavaQ12.introductionToJava12;
 import static questions.introductionToJava.Q13.IntroductionToJavaQ13.introductionToJava13;
 import static questions.introductionToJava.Q14.IntroductionToJavaQ14.introductionToJava14;
+import static questions.introductionToJava.Q15.IntroductionToJavaQ15.introductionToJava15;
+import static questions.introductionToJava.Q16.IntroductionToJavaQ16.introductionToJava16;
 
 public class IntroductionToJavaMain {
     
@@ -43,8 +45,8 @@ public class IntroductionToJavaMain {
                 case 12 -> introductionToJava12();
                 case 13 -> introductionToJava13();
                 case 14 -> introductionToJava14();
-                case 15 -> System.out.println();
-                case 16 -> System.out.println();
+                case 15 -> introductionToJava15();
+                case 16 -> introductionToJava16();
                 case 17 -> System.out.println();
                 case 18 -> System.out.println();
                 case 19 -> System.out.println();
